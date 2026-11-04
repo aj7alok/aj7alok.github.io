@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){var s=document.getElementById('stage');if(!s)return;function t(e){if(e.target.closest('a'))return;s.classList.toggle('on');s.setAttribute('aria-pressed',s.classList.contains('on'));}s.addEventListener('click',t);s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t(e);}});});

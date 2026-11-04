@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('mailbtn');if(!b)return;b.addEventListener('click',function(){var e=b.dataset.u+String.fromCharCode(64)+b.dataset.d;var o=document.getElementById('mailout');o.textContent='';var a=document.createElement('a');a.href='mailto:'+e;a.textContent=e;o.appendChild(a);b.textContent='Email ready ↓';});});
